@@ -34,7 +34,7 @@ struct Args {
     max_per_od: usize,
 
     /// In the zones GeoJSON file, which property is the name of a zone
-    #[clap(long, default_value = "InterZone")]
+    #[clap(long, default_value = "geo_code")]
     zone_name_key: String,
     /// Which column in the OD row specifies the total number of trips to disaggregate?
     #[clap(long, default_value = "all")]
